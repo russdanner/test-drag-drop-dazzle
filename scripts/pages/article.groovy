@@ -9,9 +9,9 @@ def bodyContent = templateModel.bodyContent
 def keyValuePairs = macrosItem.get("//item")
 
 logger.info("PROPS :"+keyValuePairs)
-keyValuePairs.each { p ->
+keyValuePairs.each { el ->
 //    bodyContent = bodyContent.replaceAll("["+p+"]", v)
-logger.info("PAIR:"+p)    
+logger.info("PAIR:"+ el.selectItem("key").getValue())    
 }
 
 
