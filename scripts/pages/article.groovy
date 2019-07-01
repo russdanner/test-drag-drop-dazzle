@@ -8,7 +8,7 @@ def bodyContent = contentModel.bodyContent.text
 
 def keyValuePairs = macrosItem.get("//item")
 keyValuePairs.each { el ->
-    bodyContent = bodyContent.replace("["+el.selectNodes("key")[0].getText()+"]", el.selectNodes("value")[0].getText())
+    bodyContent = bodyContent.replace("["+el.selectNodes("key")[0].text+"]", el.selectNodes("value")[0].text)
 }
 
 
