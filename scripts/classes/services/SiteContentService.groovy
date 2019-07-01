@@ -21,7 +21,9 @@ public class SiteContentService {
             bodyContent = bodyContent.replace("["+el.selectSingleNode("key").text+"]", el.selectSingleNode("value").text)
         }
     
-        return bodyContent
+        contentItem.bodyContent = bodyContent
+        
+        return contentItem
     }
 
 }
