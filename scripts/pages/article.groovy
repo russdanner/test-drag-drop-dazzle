@@ -6,7 +6,7 @@ templateModel.homepageScenario = homepageScenarioItem
 def macrosItem = siteItemService.getSiteItem("/site/components/macros/store-macros.xml")
 def bodyContent = templateModel.bodyContent
 
-def keyValuePairs = macrosItem.getProperties()
+def keyValuePairs = macrosItem.get("//item")
 
 logger.info("PROPS :"+keyValuePairs)
 keyValuePairs.each { p ->
