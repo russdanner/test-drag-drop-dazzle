@@ -31,7 +31,7 @@
 		</rteStyleOverride>
 
         <toolbarItems1>
-          channel,predefinedTable,|,formatselect,|bold,italic,underline,strikethrough,|,sub,sup,charmap,|,outdent,indent,blockquote,|,justifyleft,justifycenter,justifyright,justifyfull,|,bullist,numlist,|,managedImage,link,unlink,anchor,|,edithtml,|,undo,redo,|,tablecontrols,media,visualblocks,advhr,autosave,directionality,iespell,media,print,table,xhtmlxtras,advimage,bbcode,  emotions,inlinepopups,nonbreaking,template,advlink,contextmenu,example,insertdatetime,noneditable,searchreplace,visualblocks,advlist,cs_contextmenu,example_dependency,layer,pagebreak,spellchecker,visualchars,autolink,cs_inlinepopups,fullpage,legacyoutput,paste,style,wordc,autoresize,cs_table,fullscreen,lists,preview, tabfocus,wordcount,media
+          insertStub, channel,predefinedTable,|,formatselect,|bold,italic,underline,strikethrough,|,sub,sup,charmap,|,outdent,indent,blockquote,|,justifyleft,justifycenter,justifyright,justifyfull,|,bullist,numlist,|,managedImage,link,unlink,anchor,|,edithtml,|,undo,redo,|,tablecontrols,media,visualblocks,advhr,autosave,directionality,iespell,media,print,table,xhtmlxtras,advimage,bbcode,  emotions,inlinepopups,nonbreaking,template,advlink,contextmenu,example,insertdatetime,noneditable,searchreplace,visualblocks,advlist,cs_contextmenu,example_dependency,layer,pagebreak,spellchecker,visualchars,autolink,cs_inlinepopups,fullpage,legacyoutput,paste,style,wordc,autoresize,cs_table,fullscreen,lists,preview, tabfocus,wordcount,media
         </toolbarItems1>
         <toolbarItems2></toolbarItems2>
         <toolbarItems3></toolbarItems3>
@@ -96,6 +96,19 @@
                </prototype>
            </table>
         </rteTables>
+        
+        <!-- Macros -->
+        <rteStubs>
+        	<stub>
+            	<name>Store Count</name>
+                <prototype> [STORE_COUNT] </prototype>
+			</stub>
+            <stub>
+            	<name>SE Name</name>
+                <prototype> [SE_NAME] </prototype>
+			</stub>
+        </rteStubs>
+        
         <!-- Modules: -->
         <rteModules>
             <module>insert-image</module>
@@ -103,7 +116,7 @@
             <module>edit-html</module>
             <module>insert-predefined-table</module>
             <module>channel</module>
-
+            <module>insert-stub</module>
         </rteModules>
     </setup>
     
