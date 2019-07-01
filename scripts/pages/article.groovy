@@ -6,9 +6,9 @@ templateModel.homepageScenario = homepageScenarioItem
 def macrosItem = siteItemService.getSiteItem("/site/components/macros/store-macros.xml")
 def bodyContent = templateModel.bodyContent
 
-def keyValuePairs  = macrosItem.queryValues("//item")
-keyValuePairs.each { pair ->
-    bodyContent = bodyContent.replaceAll("["+pair.key+"]", pair.value)
+def keyValuePairs  = macrosItem.getProperties().get("macros")
+keyValuePairs.each { k, v, ->
+    bodyContent = bodyContent.replaceAll("["+k+"]", v)
     
 }
 
