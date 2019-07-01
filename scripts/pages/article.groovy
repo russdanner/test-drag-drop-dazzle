@@ -5,9 +5,9 @@ templateModel.homepageScenario = homepageScenarioItem
 
 
 def siteContentService = applicationContext.get("siteContentService")
-def bodyContent = siteContentService.processMacrosForItem(contentModel)
+def processedModel = siteContentService.processMacrosForItem(contentModel)
 
-templateModel.bodyContent = bodyContent
+templateModel.contentModel = processedModel
 
 def sum = 46 + 2
 
