@@ -12,9 +12,9 @@ public class SiteContentService {
     /**
      * returns processed bodyContent field
      */
-    def processMacrosForItem(item) {
+    def processMacrosForItem(contentItem) {
         def macrosItem = siteItemService.getSiteItem("/site/components/macros/store-macros.xml")
-        def bodyContent = contentModel.bodyContent.text
+        def bodyContent = contentItem.bodyContent.text
     
         def keyValuePairs = macrosItem.get("//item")
         keyValuePairs.each { el ->
