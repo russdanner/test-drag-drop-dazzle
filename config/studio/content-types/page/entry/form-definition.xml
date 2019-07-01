@@ -1,254 +1,162 @@
-<!--
-  ~ Copyright (C) 2007-2019 Crafter Software Corporation. All Rights Reserved.
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License as published by
-  ~ the Free Software Foundation, either version 3 of the License, or
-  ~ (at your option) any later version.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
-  -->
-
 <form>
-    <title>A Page</title>
-    <description>A Simple Page</description>
-    <objectType>page</objectType>
-    <content-type>/page/entry</content-type>
-    <imageThumbnail>undefined</imageThumbnail>
-    <properties>		<property>
-        <name>display-template</name>
-        <label>Display Template</label>
-        <value>/templates/web/entry.ftl</value>
-        <type>template</type>
-    </property>
-        <property>
-            <name>merge-strategy</name>
-            <label>Merge Strategy</label>
-            <value>inherit-levels</value>
-            <type>string</type>
-        </property>
-    </properties>
-    <sections>		<section>
-        <title>Page Settings</title>
-        <description></description>
-        <defaultOpen>true</defaultOpen>
-        <fields>
-            <field>
-                <type>file-name</type>
-                <id>file-name</id>
-                <iceId></iceId>
-                <title>Page URL</title>
-                <description></description>
-                <defaultValue></defaultValue>
-                <help></help>
-                <properties>
-                    <property>
-                        <name>size</name>
-                        <value>50</value>
-                        <type>int</type>
-                    </property>
-                    <property>
-                        <name>maxlength</name>
-                        <value>50</value>
-                        <type>int</type>
-                    </property>
-                    <property>
-                        <name>readonly</name>
-                        <value></value>
-                        <type>boolean</type>
-                    </property>
-                </properties>
-                <constraints>
-                </constraints>
-            </field>
-            <field>
-                <type>input</type>
-                <id>internal-name</id>
-                <iceId></iceId>
-                <title>File Title</title>
-                <description></description>
-                <defaultValue></defaultValue>
-                <help></help>
-                <properties>
-                    <property>
-                        <name>size</name>
-                        <value>50</value>
-                        <type>int</type>
-                    </property>
-                    <property>
-                        <name>maxlength</name>
-                        <value>60</value>
-                        <type>int</type>
-                    </property>
-                    <property>
-                        <name>readonly</name>
-                        <value></value>
-                        <type>boolean</type>
-                    </property>
-                    <property>
-                        <name>tokenize</name>
-                        <value>false</value>
-                        <type>boolean</type>
-                    </property>
-                </properties>
-                <constraints>
-                    <constraint>
-                        <name>required</name>
-                        <value><![CDATA[true]]></value>
-                        <type>boolean</type>
-                    </constraint>
-                </constraints>
-            </field>
-            <field>
-                <type>page-nav-order</type>
-                <id>placeInNav</id>
-                <iceId></iceId>
-                <title>Place in Nav</title>
-                <description></description>
-                <defaultValue></defaultValue>
-                <help></help>
-                <properties>
-                    <property>
-                        <name>readonly</name>
-                        <value></value>
-                        <type>boolean</type>
-                    </property>
-                </properties>
-                <constraints>
-                    <constraint>
-                        <name>required</name>
-                        <value><![CDATA[]]></value>
-                        <type>boolean</type>
-                    </constraint>
-                </constraints>
-            </field>
-            <field>
-                <type>checkbox</type>
-                <id>disabled</id>
-                <iceId></iceId>
-                <title>Disable Page</title>
-                <description></description>
-                <defaultValue></defaultValue>
-                <help></help>
-                <properties>
-                    <property>
-                        <name>readonly</name>
-                        <value></value>
-                        <type>boolean</type>
-                    </property>
-                </properties>
-                <constraints>
-                    <constraint>
-                        <name>required</name>
-                        <value><![CDATA[]]></value>
-                        <type>boolean</type>
-                    </constraint>
-                </constraints>
-            </field>
-        </fields>
-    </section>
-        <section>
-            <title>Main Content</title>
-            <description></description>
-            <defaultOpen>true</defaultOpen>
-            <fields>
-                <field>
-                    <type>input</type>
-                    <id>title</id>
-                    <iceId>title</iceId>
-                    <title>Title</title>
-                    <description></description>
-                    <defaultValue></defaultValue>
-                    <help></help>
-                    <properties>
-                        <property>
-                            <name>size</name>
-                            <value>50</value>
-                            <type>int</type>
-                        </property>
-                        <property>
-                            <name>maxlength</name>
-                            <value>50</value>
-                            <type>int</type>
-                        </property>
-                        <property>
-                            <name>readonly</name>
-                            <value></value>
-                            <type>boolean</type>
-                        </property>
-                        <property>
-                            <name>tokenize</name>
-                            <value>false</value>
-                            <type>boolean</type>
-                        </property>
-                    </properties>
-                    <constraints>
-                        <constraint>
-                            <name>required</name>
-                            <value><![CDATA[true]]></value>
-                            <type>boolean</type>
-                        </constraint>
-                        <constraint>
-                            <name>pattern</name>
-                            <value><![CDATA[]]></value>
-                            <type>string</type>
-                        </constraint>
-                    </constraints>
-                </field>
-                <field>
-					<type>rte-tinymce5</type>
-					<id>body</id>
-					<iceId>main</iceId>
-					<title>Body</title>
+	<title>Home Page</title>
+	<description></description>
+	<objectType>page</objectType>
+	<content-type>/page/entry</content-type>
+	<imageThumbnail>undefined</imageThumbnail>
+	<properties>		<property>
+			<name>placeInNav</name>
+			<label>Show In Nav</label>
+			<value>true</value>
+			<type>boolean</type>
+		</property>
+		<property>
+			<name>display-template</name>
+			<label>Display Template</label>
+			<value>/templates/web/entry.ftl</value>
+			<type>template</type>
+		</property>
+		<property>
+			<name>descriptor-mapper</name>
+			<label>Descriptor Mapper</label>
+			<value>hierarchical-mapper</value>
+			<type>string</type>
+		</property>
+	</properties>
+	<sections>		<section>
+			<title>Page Settings</title>
+			<description></description>
+			<defaultOpen>true</defaultOpen>
+			<fields>
+				<field>
+					<type>file-name</type>
+					<id>file-name</id>
+					<iceId></iceId>
+					<title>Page URL</title>
 					<description></description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
 						<property>
-							<name>height</name>
-							<value>300</value>
+							<name>size</name>
+							<value>50</value>
 							<type>int</type>
 						</property>
 						<property>
-							<name>forceRootBlockPTag</name>
-							<value>true</value>
-							<type>boolean</type>
+							<name>maxlength</name>
+							<value>50</value>
+							<type>int</type>
 						</property>
 						<property>
-							<name>forcePTags</name>
-							<value>true</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>forceBRTags</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>supportedChannels</name>
+							<name>path</name>
 							<value></value>
-							<type>supportedChannels</type>
-						</property>
-						<property>
-							<name>rteConfiguration</name>
-							<value>generic</value>
 							<type>string</type>
 						</property>
 						<property>
-							<name>imageManager</name>
-							<value>desktopImages</value>
-							<type>datasource:image</type>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+					</constraints>
+				</field>
+				<field>
+					<type>input</type>
+					<id>internal-name</id>
+					<iceId></iceId>
+					<title>File Title</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>size</name>
+							<value>50</value>
+							<type>int</type>
 						</property>
 						<property>
-							<name>videoManager</name>
+							<name>maxlength</name>
+							<value>60</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>readonly</name>
 							<value></value>
-							<type>datasource:video</type>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[true]]></value>
+							<type>int</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>checkbox</type>
+					<id>disabled</id>
+					<iceId></iceId>
+					<title>Disable Page</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+			</fields>
+		</section>
+		<section>
+			<title>Main Content</title>
+			<description></description>
+			<defaultOpen>true</defaultOpen>
+			<fields>
+				<field>
+					<type>input</type>
+					<id>headline</id>
+					<iceId>headlines</iceId>
+					<title>Headline</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>size</name>
+							<value>50</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxlength</name>
+							<value>50</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
 						</property>
 					</properties>
 					<constraints>
@@ -257,23 +165,149 @@
 							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value><![CDATA[]]></value>
+							<type>string</type>
+						</constraint>
 					</constraints>
 				</field>
-            </fields>
-        </section>
-    </sections>
-    <datasources>				<datasource>
-        <type>img-desktop-upload</type>
-        <id>desktopImages</id>
-        <title>Desktop Images</title>
-        <interface>image</interface>
-        <properties>
-            <property>
-                <name>repoPath</name>
-                <value>/static-assets/item/images/{yyyy}/{mm}/{dd}/</value>
-                <type>undefined</type>
-            </property>
-        </properties>
-    </datasource>
-    </datasources>
+				<field>
+					<type>textarea</type>
+					<id>subHeadline</id>
+					<iceId>headlines</iceId>
+					<title>Sub Headline</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>cols</name>
+							<value>50</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>rows</name>
+							<value>5</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxlength</name>
+							<value>100000</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>allowResize</name>
+							<value>true</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+			</fields>
+		</section>
+		<section>
+			<title>Components</title>
+			<description></description>
+			<defaultOpen>false</defaultOpen>
+			<fields>
+				<field>
+					<type>node-selector</type>
+					<id>col1</id>
+					<iceId></iceId>
+					<title>Zone 1</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>minSize</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxSize</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>components</value>
+							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useSingleValueFilename</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>allowDuplicates</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+			</fields>
+		</section>
+	</sections>
+	<datasources>				<datasource>
+					<type>img-desktop-upload</type>
+					<id>desktopImages</id>
+					<title>Desktop Images</title>
+					<interface>image</interface>
+					<properties>
+						<property>
+							<name>repoPath</name>
+							<value>/static-assets/images/pages/{objectId}/</value>
+								<type>undefined</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>child-content</type>
+					<id>components</id>
+					<title>Components</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>repoPath</name>
+							<value></value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>browsePath</name>
+							<value></value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>type</name>
+							<value></value>
+								<type>undefined</type>
+						</property>
+					</properties>
+				</datasource>
+	</datasources>
 </form>
