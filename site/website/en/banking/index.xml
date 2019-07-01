@@ -30,7 +30,7 @@
 &lt;/section&gt;
 &lt;div _ngcontent-c0="" aria-label="Open an account" class="action-bar" id="mainContent" role="complementary"&gt;
 &lt;div _ngcontent-c0="" class="action-bar__inner"&gt;
-&lt;div _ngcontent-c0="" class="action-bar__cta" tb-action-bar-cta=""&gt;&lt;span _ngcontent-c0="" class="action-bar__cta-text"&gt;Open online in as few as 5 minutes&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;a _ngcontent-c0="" class="action-bar__cta-btn" href="https://www.tiaabank.com/apply" tb-apply-link="" tb-nav-cta-target=""&gt;&lt;br /&gt;&lt;/a&gt;&lt;span _ngcontent-c0="" class="action-bar__cta-phone"&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div _ngcontent-c0="" class="action-bar__cta" tb-action-bar-cta=""&gt;&lt;span _ngcontent-c0="" class="action-bar__cta-text"&gt;Open online in as few as 5 minutes or visit one of our [STORE_COUNT] branch locations.&amp;nbsp;&lt;/span&gt;&lt;a _ngcontent-c0="" class="action-bar__cta-btn" href="https://www.tiaabank.com/apply" tb-apply-link="" tb-nav-cta-target=""&gt;&lt;br /&gt;&lt;/a&gt;&lt;span _ngcontent-c0="" class="action-bar__cta-phone"&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;section _ngcontent-c0="" aria-label="Basic checking info" class="wrap" role="main"&gt;
@@ -41,7 +41,7 @@
 &lt;article _ngcontent-c0="" class="mu-flex__item"&gt;
 &lt;div _ngcontent-c0="" class="mu-card mu-card_fill-hgt"&gt;
 &lt;div _ngcontent-c0="" class="mu-card__content mu-txt_ctr mu-box_mrg-btm-xl"&gt;
-&lt;h2 _ngcontent-c0=""&gt;Basic Checking&lt;/h2&gt;
+&lt;h2 _ngcontent-c0=""&gt;Basic Checking&amp;nbsp;&lt;/h2&gt;
 &lt;p _ngcontent-c0=""&gt;The everyday account for your everyday needs. Online and mobile banking come free and will keep you fully connected and in charge of your money anytime, anywhere.&lt;/p&gt;
 &lt;ul _ngcontent-c0="" class="list list_bullet"&gt;
 &lt;li _ngcontent-c0="" class="list__item list__item_bullet"&gt;$25 to open&lt;span _ngcontent-c0=""&gt;1&lt;/span&gt;&lt;/li&gt;
@@ -138,8 +138,8 @@
 	<disabled>false</disabled>
 	<createdDate>2018-01-25T22:39:01.635Z</createdDate>
 	<createdDate_dt>2018-01-25T22:39:01.635Z</createdDate_dt>
-	<lastModifiedDate>2019-06-26T18:18:38.345Z</lastModifiedDate>
-	<lastModifiedDate_dt>2019-06-26T18:18:38.345Z</lastModifiedDate_dt>
+	<lastModifiedDate>2019-07-01T16:28:26.808Z</lastModifiedDate>
+	<lastModifiedDate_dt>2019-07-01T16:28:26.808Z</lastModifiedDate_dt>
 	<expireDate_dt>2018-01-25T22:39:01.000Z</expireDate_dt>
 	<keywords>Article</keywords>
 	<col1 item-list="true">	<item>	<key>/site/components/page/8d718897-6bd4-120c-967c-ff769819b988-a0d784fd.xml</key>
@@ -148,4 +148,5 @@
 	<disableFlattening>false</disableFlattening>
 	</item></col1>
 	<demofield>This is a demo field</demofield>
+	<expireDate_dt_tz>EST5EDT</expireDate_dt_tz>
 </page>
