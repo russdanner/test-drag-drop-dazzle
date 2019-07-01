@@ -11,7 +11,7 @@ def keyValuePairs = macrosItem.get("//item")
 logger.info("PROPS :"+keyValuePairs)
 keyValuePairs.each { el ->
 //    bodyContent = bodyContent.replaceAll("["+p+"]", v)
-logger.info("PAIR:"+ el.selectItem("key").getValue())    
+logger.info("PAIR:"+ el.selectItem("key").getValue() )    
 }
 
 
