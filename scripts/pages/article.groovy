@@ -9,7 +9,7 @@ def bodyContent = templateModel.bodyContent
 macrosItem  = itemDom.queryValues("//item")
 
 
-templateModel.bodyContent = 
+//templateModel.bodyContent = 
 
 def sum = 46 + 2
 
