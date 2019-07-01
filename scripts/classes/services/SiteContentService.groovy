@@ -13,7 +13,15 @@ public class SiteContentService {
      * returns processed bodyContent field
      */
     def processMacrosForItem(item) {
-        
+        def macrosItem = siteItemService.getSiteItem("/site/components/macros/store-macros.xml")
+        def bodyContent = contentModel.bodyContent.text
+    
+        def keyValuePairs = macrosItem.get("//item")
+        keyValuePairs.each { el ->
+            bodyContent = bodyContent.replace("["+el.selectSingleNode("key").text+"]", el.selectSingleNode("value").text)
+        }
+    
+        return bodyContent
     }
 
 }
