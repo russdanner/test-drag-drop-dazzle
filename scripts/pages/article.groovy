@@ -4,11 +4,11 @@ def homepageScenarioItem = targetedContentService.getHomepageScenario(profile)
 templateModel.homepageScenario = homepageScenarioItem
 
 def macrosItem = siteItemService.getSiteItem("/site/components/macros/store-macros.xml")
-def bodyContent = templateModel.bodyContent
+def bodyContent = contentModel.bodyContent
 
 def keyValuePairs = macrosItem.get("//item")
 keyValuePairs.each { el ->
-    bodyContent = bodyContent.replace("["+el.selectNodes("key")[0].getText()+"]", "foo")
+    bodyContent = bodyContent.replace("["+el.selectNodes("key")[0].getText()+"]", el.selectNodes("value")[0].getText())
 }
 
 
