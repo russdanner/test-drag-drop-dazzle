@@ -7,16 +7,13 @@ def macrosItem = siteItemService.getSiteItem("/site/components/macros/store-macr
 def bodyContent = templateModel.bodyContent
 
 def keyValuePairs = macrosItem.get("//item")
-
-logger.info("PROPS :"+keyValuePairs)
 keyValuePairs.each { el ->
-//    bodyContent = bodyContent.replaceAll("["+p+"]", v)
-logger.info("PAIR:"+ el.selectNodes("key")[0].getText() )    
+    bodyContent = bodyContent.replaceAll("["+el.selectNodes("key")[0].getText()+"]", el.selectNodes("value")[0].getText())
 }
 
 
 
-//templateModel.bodyContent = 
+templateModel.bodyContent = bodyContent
 
 def sum = 46 + 2
 
