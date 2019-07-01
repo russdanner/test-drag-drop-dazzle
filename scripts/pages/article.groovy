@@ -7,6 +7,7 @@ def macrosItem = siteItemService.getSiteItem("/site/components/macros/store-macr
 def bodyContent = templateModel.bodyContent
 
 def keyValuePairs = macrosItem.getProperties().get("macros")
+logger.info("PROPS :"+keyValuePairs)
 keyValuePairs.each { p ->
 //    bodyContent = bodyContent.replaceAll("["+p+"]", v)
 logger.info("PAIR:"+p)    
