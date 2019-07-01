@@ -4,7 +4,7 @@ def homepageScenarioItem = targetedContentService.getHomepageScenario(profile)
 templateModel.homepageScenario = homepageScenarioItem
 
 def macrosItem = siteItemService.getSiteItem("/site/components/macros/store-macros.xml")
-def bodyContent = contentModel.bodyContent
+def bodyContent = contentModel.bodyContent.text
 
 def keyValuePairs = macrosItem.get("//item")
 keyValuePairs.each { el ->
