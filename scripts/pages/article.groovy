@@ -2,7 +2,11 @@ def targetedContentService = applicationContext.get("targetedContentService")
 def homepageScenarioItem = targetedContentService.getHomepageScenario(profile)
 
 templateModel.homepageScenario = homepageScenarioItem
-def bodyContent = processMacros(contentModel, siteItemService)
+
+
+def siteContentService = applicationContext.get("siteContentService")
+def bodyContent = siteContentService.processMacrosForItem(contentModel)
+
 templateModel.bodyContent = bodyContent
 
 def sum = 46 + 2
