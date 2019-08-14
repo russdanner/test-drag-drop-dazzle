@@ -3,6 +3,7 @@
 	<content-type>/page/entry</content-type>	<placeInNav>true</placeInNav>
 	<display-template>/templates/web/entry.ftl</display-template>
 	<descriptor-mapper>hierarchical-mapper</descriptor-mapper>
+	<no-template-required/>
 	<placeInNav>false</placeInNav>
 	<file-name>index.xml</file-name>
 	<internal-name>Home (EN_Us)</internal-name>
@@ -17,11 +18,7 @@
 	<disabled>false</disabled>
 	<headline>Accelerated portfolios the</headline>
 	<subHeadline>We are the Financial Experts for Long term Portfolio management.   Find out how.</subHeadline>
-	<col1 item-list="true">	<item>	<value>Target Content</value>
-	<key>/site/components/page/e071a1e9-b800-c5e8-b6b3-50e53c0d71c8.xml</key>
-	<include>/site/components/page/e071a1e9-b800-c5e8-b6b3-50e53c0d71c8.xml</include>
-	<disableFlattening>false</disableFlattening>
-	</item>	<item>	<value>Two Column Layout</value>
+	<col1 item-list="true">	<item>	<value>Two Column Layout</value>
 	<key>/site/components/page/1d9d0985-8990-49c8-2f38-44c542906868.xml</key>
 	<include>/site/components/page/1d9d0985-8990-49c8-2f38-44c542906868.xml</include>
 	<disableFlattening>false</disableFlattening>
