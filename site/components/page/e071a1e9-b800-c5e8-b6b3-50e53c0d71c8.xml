@@ -2,14 +2,11 @@
 <component>
 	<content-type>/plugins/targeting/targeter</content-type>	<display-template>/templates/plugins/targeting/targeter.ftl</display-template>
 	<merge-strategy>inherit-levels</merge-strategy>
+	<no-template-required/>
 	<objectGroupId>e071</objectGroupId>
 	<objectId>e071a1e9-b800-c5e8-b6b3-50e53c0d71c8</objectId>
 	<file-name>e071a1e9-b800-c5e8-b6b3-50e53c0d71c8.xml</file-name>
-	<zone1 item-list="true">	<item>	<key>/site/components/page/77e02646-a106-bcfd-7419-4a675b8bfb1a-3a67f855.xml</key>
-	<value>TIAA Investing</value>
-	<include>/site/components/page/77e02646-a106-bcfd-7419-4a675b8bfb1a-3a67f855.xml</include>
-	<disableFlattening>false</disableFlattening>
-	</item></zone1>
+	<zone1 item-list="true"/>
 	<createdDate>2019-06-23T21:56:33.188Z</createdDate>
 	<createdDate_dt>2019-06-23T21:56:33.188Z</createdDate_dt>
 	<lastModifiedDate>2019-06-24T12:00:57.794Z</lastModifiedDate>
