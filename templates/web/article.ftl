@@ -36,7 +36,7 @@
 <header id="header" class="row">   
 
    <div class="header-logo">
-      <a href="/"> <image src="/static-assets/app/images/logo.png"</a>
+      <a href="/"> <image src="/static-assets/images/homepage-scenarios/dazzle_logo.png"</a>
   </div>
   <#include "/templates/web/navigation/navigation.ftl">
   
