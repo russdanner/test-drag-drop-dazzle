@@ -2,15 +2,12 @@
 <component>
 	<content-type>/plugins/bootstrap-layouts/2-col</content-type>	<display-template>/templates/plugins/bootstrap-layouts/component-2-col.ftl</display-template>
 	<merge-strategy>inherit-levels</merge-strategy>
+	<no-template-required/>
 	<objectGroupId>1d9d</objectGroupId>
 	<objectId>1d9d0985-8990-49c8-2f38-44c542906868</objectId>
 	<file-name>1d9d0985-8990-49c8-2f38-44c542906868.xml</file-name>
 	<sectionID>Targeted Articles</sectionID>
-	<zone1 item-list="true">	<item>	<key>/site/components/page/77e02646-a106-bcfd-7419-4a675b8bfb1a.xml</key>
-	<value>Enroll In Your Benefits</value>
-	<include>/site/components/page/77e02646-a106-bcfd-7419-4a675b8bfb1a.xml</include>
-	<disableFlattening>false</disableFlattening>
-	</item></zone1>
+	<zone1 item-list="true"/>
 	<zone2 item-list="true">	<item>	<key>/site/components/page/77e02646-a106-bcfd-7419-4a675b8bfb1a-68bfa9be.xml</key>
 	<value>Pay Off Your Mortgage</value>
 	<include>/site/components/page/77e02646-a106-bcfd-7419-4a675b8bfb1a-68bfa9be.xml</include>
