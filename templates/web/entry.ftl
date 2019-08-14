@@ -42,11 +42,9 @@
             <div class="row contents">                     
                 <div class="home-content-left"<@studio.componentAttr path=homepageScenario.storeUrl ice=true />>
 
-                    <h3 data-aos="fade-up" <@studio.iceAttr iceGroup="headlines"/> >${contentModel.headline}
-                    <#if profile.attributes.region == "anonymous" >
-                         Dazzle Finance Way </h3>
-                        <#else> ${profile.attributes.region} Way </h3>
-                    </#if>
+                    <h3 data-aos="fade-up" <@studio.iceAttr iceGroup="headlines"/> >
+                    ${contentModel.headline}
+                    
                     <h1 data-aos="fade-up">
                     ${contentModel.subHeadline} 
                      </h1>
