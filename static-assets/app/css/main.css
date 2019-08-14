@@ -792,6 +792,7 @@ h5, .h05, h6, .h06 {
   margin-bottom: 1.2rem;
 }
 h1, .h01 {
+  font-size: 3.1rem;
   line-height: 1.35;
   letter-spacing: -.1rem;
 }
@@ -1886,6 +1887,7 @@ h1.intro-header::before {
   border: none;
   width: 97px;
   height: 22px;
+  background: url("../images/logo.png") no-repeat center;
   background-size: 97px 22px;
   font: 0/0 a;
   text-shadow: none;
@@ -2192,6 +2194,7 @@ h1.intro-header::before {
 
 .home-content-left h1 {
   font-family: "montserrat-regular", sans-serif;
+  font-size: 5.2rem;
   letter-spacing: -.05rem;
   line-height: 1.269;
   color: #ffffff;
@@ -2415,6 +2418,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     font-size: 1.5rem;
   }
   .home-content-left h1 {
+    font-size: 4.8rem;
   }
   .home-image-right {
     padding-top: 18rem;
@@ -2427,6 +2431,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 @media only screen and (max-width: 1100px) {
   .home-content-left h1 {
+    font-size: 4.6rem;
   }
   .home-content-left h1 br {
     display: none;
@@ -2442,6 +2447,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     font-size: 1.5rem;
   }
   .home-content-left h1 {
+    font-size: 4.2rem;
   }
   .home-image-right {
     width: 40%;
@@ -2470,6 +2476,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     margin: 0 auto;
   }
   .home-content-left h1 {
+    margin-bottom: 3.6rem;
   }
   .home-image-right {
     width: 400px;
@@ -2493,6 +2500,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     font-size: 1.4rem;
   }
   .home-content-left h1 {
+    font-size: 3.6rem;
   }
 }
 
@@ -2501,6 +2509,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     padding: 12rem 6rem 366px;
   }
   .home-content-left h1 {
+    font-size: 3.3rem;
   }
   .home-content-left .button.stroke {
     width: 100%;
@@ -2526,6 +2535,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     width: 100%;
   }
   .home-content-left h1 {
+    font-size: 3rem;
   }
 }
 
@@ -3556,11 +3566,11 @@ footer ul a:visited {
   text-decoration: none;
   border: 0 none;
   display: block;
-  height: 30px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   line-height: 60px;
   text-align: center;
-  background: url("../images/logo.svg") no-repeat center;
+  background: black;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   text-transform: uppercase;
