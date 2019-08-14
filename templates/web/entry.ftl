@@ -57,11 +57,12 @@
                                 ${cta.label}
                             </a>
                           </#list>
+                          <BR/><BR/><BR/>
                       </#if>
                     </div>                                         
 
                 </div>
-
+                
                 <div class="home-image-right">
                     <img src="${homepageScenario.hoverImageSmall}"
                         srcset="${homepageScenario.hoverImageSmall} 1x, ${homepageScenario.hoverImageLarge} 2x" <@studio.componentAttr path=homepageScenario.storeUrl ice=true />>
