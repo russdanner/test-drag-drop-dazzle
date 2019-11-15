@@ -158,6 +158,12 @@
                   <stackedclass>fa-magic</stackedclass>
                </icon>
             </control>
+            <control>
+               <name>numeric-input</name>
+               <icon>
+                  <class>fa-pencil-square</class>
+               </icon>
+            </control>
          </controls>
          <datasources>
             <datasource>
